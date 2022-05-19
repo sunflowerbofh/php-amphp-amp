@@ -1,0 +1,5 @@
+amphp-amp (2.6.2-1) unstable; urgency=medium
+
+  * Initial release (Closes: #1011270).
+
+ -- Katharina Drexel <katharina.drexel@bfh.ch>  Mon, 02 May 2022 14:37:59 +0200

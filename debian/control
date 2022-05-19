@@ -1,0 +1,34 @@
+Source: amphp-amp
+Section: php
+Priority: optional
+Maintainer: Katharina Drexel <katharina.drexel@bfh.ch>
+Build-Depends:
+ debhelper-compat (= 13),
+ phpab,
+ pkg-php-tools,
+Rules-Requires-Root: no
+Standards-Version: 4.6.1
+Homepage: https://github.com/amphp/amp
+Vcs-Browser: https://github.com/sunflowerbofh/php-amphp-amp
+Vcs-Git: https://github.com/sunflowerbofh/php-amphp-amp.git
+
+Package: php-amphp-amp
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${phpcomposer:Debian-require},
+Suggests:
+ ${phpcomposer:Debian-suggest},
+Replaces:
+ ${phpcomposer:Debian-replace},
+Breaks:
+ ${phpcomposer:Debian-conflict},
+Provides:
+ ${phpcomposer:Debian-provide},
+Description: Non-blocking concurrency framework for PHP
+ Amp is a non-blocking concurrency framework for PHP. It provides an event loop,
+ promises and streams as a base for asynchronous programming.
+ .
+ Promises in combination with generators are used to build coroutines, which
+ allow writing asynchronous code just like synchronous code, without any
+ callbacks.
